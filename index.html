@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Joke Images</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    Welcome to the webisite!
+  </header>
+  <nav>
+    <a href="#quiz" class="active">Quiz</a>
+    <a href="#jokes">Jokes</a>
+    <a href="#carousel">Images</a>
+  </nav>
+
+  <main id="quiz-section">
+    <div id="start-screen">
+      <h2>Ready to begin the quiz here?</h2>
+      <button id="start-btn">Start </button>
+    </div>
+    <div id="quiz-screen" style="display: none;">
+      <div id="timer" style="font-weight: bold; color: red; margin-bottom: 1rem;"></div>
+      <div class="question" id="question">Loading question...</div>
+      <ul class="options" id="options"></ul>
+      <button id="next-btn">Next</button>
+    </div>
+  </main>
+
+  <main id="api-section" style="display: none;">
+    <h2 style="text-align:center;">Random Joke</h2>
+    <div id="joke" style="font-size: 1.3rem; text-align: center; margin: 20px 0;">Loading...</div>
+    <div style="text-align:center;">
+      <button id="joke-btn">Get Joke</button>
+    </div>
+  </main>
+
+  <main id="carousel-section" style="display: none;">
+    <h2 style="text-align:center;">Nature Images</h2>
+    <div style="text-align:center;">
+      <img id="carousel-img" src="" alt="Carousel Image" />
+      <div style="margin-top: 1rem;">
+        <button id="prev-btn">⟨ Prev</button>
+        <button id="next-btn-carousel">Next ⟩</button>
+      </div>
+      <div id="dots-container"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
